@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +13,7 @@ namespace zad1
         {
             Console.Write("Введите название файла (подсказка: он называется 'file.txt'): ");
             string fileName = Console.ReadLine();
-            if (File.Exists("file.txt"))
+            if (File.Exists(fileName))
             {
                 string[] sentenses = File.ReadAllLines("file.txt");
                 string searchWord = "";
@@ -43,5 +43,4 @@ namespace zad1
         }
     }
 }
-
 
